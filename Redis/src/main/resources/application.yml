@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:provadb
+    username: root
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create
+  h2:
+    console:
+      enabled: true
+  main:
+    allow-bean-definition-overriding: true
+redis:
+  database:
+  password:
+  host:
+  port:
+---
+environment: test
+redis:
+  host: localhost
+  port: 3467
+  password:
